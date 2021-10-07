@@ -1,0 +1,766 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <title>Globo Casting</title>
+</head>
+<body>
+
+    <header class="gc-header-wrapper">
+        <div class="header-content-container">
+            <div class="menu-box">
+                <img src="/img/icons/icon-header-menu.svg" alt="" class="menu-icon">
+                <span class="menu-title">Menu</span>
+                <img src="/img/icons/icon-header-mobile-logo.svg" alt="" class="logo-mobile">
+            </div>
+            <div class="logo-box">
+                <img src="/img/icons/icon-header-logo.svg" alt="" class="header-logo">
+            </div>
+
+            <div class="user-options-box">
+                <div class="notification-icon">
+                    <img src="/img/icons/icon-header-bell.svg" alt="">
+                </div>
+                <div class="divider"></div>
+                <div class="user-greetings">
+                    <span class="hello">Olá,</span>
+                    <span class="user-name">VítorHoltz.</span>
+                </div>
+                <div class="exit-icon">
+                    <img src="/img/icons/icon-header-exit.svg" alt="">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- PÁGINA DE PROGRAMAS -->
+    <div class="gc-content-wrapper">
+
+        <div class="title-container">
+            <div class="title-box">
+              <img src="/img/icons/icon-title-programs.svg" alt="" class="title-icon">
+              <h1 class="title">Programas</h1> 
+            </div>
+          </div>
+
+          <!-- FILTROS -->
+          <div class="filter-container">
+              <div class="inputs-container">
+                  <div class="input-box">
+                      <label for="text">Procurar</label>
+                      <input type="text" id="search" name="program" placeholder="Procure um programa">
+                  </div>
+                  <div class="input-box">
+                      <label for="dropdown">Exibição do programa</label>
+                      <form> 
+                          <select name="dropdown" id="" >
+                              <option>Todos os dias</option>
+                              <option>Exemplo 01</option>
+                              <option>Exemplo 01</option>
+                              <option>Exemplo 01</option>
+                          </select>
+                      </form>
+                </div>
+                <div class="input-box">
+                    <label for="dropdown">Grade</label>
+                    <form> 
+                        <select name="dropdown" id="" >
+                            <option>TV aberta</option>
+                            <option>Exemplo 01</option>
+                            <option>Exemplo 01</option>
+                            <option>Exemplo 01</option>
+                        </select>
+                    </form>
+                </div>
+              </div>
+            <button class="primary-button new-program-btn">
+                <img src="/img/icons/icon-primary-btn-plus.svg" alt="" class="primary-button-icon">
+                Novo programa
+            </button>
+          </div>
+
+        <div class="gc-programs-wrapper">
+            <div class="program-card">
+                <div class="program-card-img-box">
+                    <img src="/img/program-altas-horas.png" alt="">
+                </div>
+                <div class="program-card-content-box">
+                    <div class="card-header">
+                        <span class="program-title">Altas Horas</span>
+                        <img src="/img/icons/icon-card-options.svg" alt="" class="options-button">
+                    </div>
+                    <div class="card-info-box">
+                        <div class="info-row">
+                            <div class="card-info">
+                                <span class="info-title">Exibição:</span>
+                                <span class="info">De segunda a sexta</span>
+                            </div>
+                            <div class="card-info">
+                                <span class="info-title">Atualização:</span>
+                                <span class="info">06/10/2021</span>
+                            </div>
+                        </div>
+                        <div class="info-row">
+                            <span class="tv-status">TV Aberta</span>
+                            <div class="card-buttons">
+                                <button class="table-button"> <img src="/img/icons/icon-table-btn-see.svg" alt="" class="table-btn-icon"><span class="table-btn-text">Ver programa</span></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="program-card">
+                <div class="program-card-img-box">
+                    <img src="/img/program-altas-horas.png" alt="">
+                </div>
+                <div class="program-card-content-box">
+                    <div class="card-header">
+                        <span class="program-title">Altas Horas</span>
+                        <img src="/img/icons/icon-card-options.svg" alt="" class="options-button">
+                    </div>
+                    <div class="card-info-box">
+                        <div class="info-row">
+                            <div class="card-info">
+                                <span class="info-title">Exibição:</span>
+                                <span class="info">De segunda a sexta</span>
+                            </div>
+                            <div class="card-info">
+                                <span class="info-title">Atualização:</span>
+                                <span class="info">06/10/2021</span>
+                            </div>
+                        </div>
+                        <div class="info-row">
+                            <span class="tv-status">TV Aberta</span>
+                            <div class="card-buttons">
+                                <button class="table-button"> <img src="/img/icons/icon-table-btn-see.svg" alt="" class="table-btn-icon"><span class="table-btn-text">Ver programa</span></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="program-card">
+                <div class="program-card-img-box">
+                    <img src="/img/program-altas-horas.png" alt="">
+                </div>
+                <div class="program-card-content-box">
+                    <div class="card-header">
+                        <span class="program-title">Altas Horas</span>
+                        <img src="/img/icons/icon-card-options.svg" alt="" class="options-button">
+                    </div>
+                    <div class="card-info-box">
+                        <div class="info-row">
+                            <div class="card-info">
+                                <span class="info-title">Exibição:</span>
+                                <span class="info">De segunda a sexta</span>
+                            </div>
+                            <div class="card-info">
+                                <span class="info-title">Atualização:</span>
+                                <span class="info">06/10/2021</span>
+                            </div>
+                        </div>
+                        <div class="info-row">
+                            <span class="tv-status">TV Aberta</span>
+                            <div class="card-buttons">
+                                <button class="table-button"> <img src="/img/icons/icon-table-btn-see.svg" alt="" class="table-btn-icon"><span class="table-btn-text">Ver programa</span></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="program-card">
+                <div class="program-card-img-box">
+                    <img src="/img/program-altas-horas.png" alt="">
+                </div>
+                <div class="program-card-content-box">
+                    <div class="card-header">
+                        <span class="program-title">Altas Horas</span>
+                        <img src="/img/icons/icon-card-options.svg" alt="" class="options-button">
+                    </div>
+                    <div class="card-info-box">
+                        <div class="info-row">
+                            <div class="card-info">
+                                <span class="info-title">Exibição:</span>
+                                <span class="info">De segunda a sexta</span>
+                            </div>
+                            <div class="card-info">
+                                <span class="info-title">Atualização:</span>
+                                <span class="info">06/10/2021</span>
+                            </div>
+                        </div>
+                        <div class="info-row">
+                            <span class="tv-status">TV Aberta</span>
+                            <div class="card-buttons">
+                                <button class="table-button"> <img src="/img/icons/icon-table-btn-see.svg" alt="" class="table-btn-icon"><span class="table-btn-text">Ver programa</span></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="program-card">
+                <div class="program-card-img-box">
+                    <img src="/img/program-altas-horas.png" alt="">
+                </div>
+                <div class="program-card-content-box">
+                    <div class="card-header">
+                        <span class="program-title">Altas Horas</span>
+                        <img src="/img/icons/icon-card-options.svg" alt="" class="options-button">
+                    </div>
+                    <div class="card-info-box">
+                        <div class="info-row">
+                            <div class="card-info">
+                                <span class="info-title">Exibição:</span>
+                                <span class="info">De segunda a sexta</span>
+                            </div>
+                            <div class="card-info">
+                                <span class="info-title">Atualização:</span>
+                                <span class="info">06/10/2021</span>
+                            </div>
+                        </div>
+                        <div class="info-row">
+                            <span class="tv-status">TV Aberta</span>
+                            <div class="card-buttons">
+                                <button class="table-button"> <img src="/img/icons/icon-table-btn-see.svg" alt="" class="table-btn-icon"><span class="table-btn-text">Ver programa</span></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="program-card">
+                <div class="program-card-img-box">
+                    <img src="/img/program-altas-horas.png" alt="">
+                </div>
+                <div class="program-card-content-box">
+                    <div class="card-header">
+                        <span class="program-title">Altas Horas</span>
+                        <img src="/img/icons/icon-card-options.svg" alt="" class="options-button">
+                    </div>
+                    <div class="card-info-box">
+                        <div class="info-row">
+                            <div class="card-info">
+                                <span class="info-title">Exibição:</span>
+                                <span class="info">De segunda a sexta</span>
+                            </div>
+                            <div class="card-info">
+                                <span class="info-title">Atualização:</span>
+                                <span class="info">06/10/2021</span>
+                            </div>
+                        </div>
+                        <div class="info-row">
+                            <span class="tv-status">TV Aberta</span>
+                            <div class="card-buttons">
+                                <button class="table-button"> <img src="/img/icons/icon-table-btn-see.svg" alt="" class="table-btn-icon"><span class="table-btn-text">Ver programa</span></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="program-card">
+                <div class="program-card-img-box">
+                    <img src="/img/program-altas-horas.png" alt="">
+                </div>
+                <div class="program-card-content-box">
+                    <div class="card-header">
+                        <span class="program-title">Altas Horas</span>
+                        <img src="/img/icons/icon-card-options.svg" alt="" class="options-button">
+                    </div>
+                    <div class="card-info-box">
+                        <div class="info-row">
+                            <div class="card-info">
+                                <span class="info-title">Exibição:</span>
+                                <span class="info">De segunda a sexta</span>
+                            </div>
+                            <div class="card-info">
+                                <span class="info-title">Atualização:</span>
+                                <span class="info">06/10/2021</span>
+                            </div>
+                        </div>
+                        <div class="info-row">
+                            <span class="tv-status">TV Aberta</span>
+                            <div class="card-buttons">
+                                <button class="table-button"> <img src="/img/icons/icon-table-btn-see.svg" alt="" class="table-btn-icon"><span class="table-btn-text">Ver programa</span></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="program-card">
+                <div class="program-card-img-box">
+                    <img src="/img/program-altas-horas.png" alt="">
+                </div>
+                <div class="program-card-content-box">
+                    <div class="card-header">
+                        <span class="program-title">Altas Horas</span>
+                        <img src="/img/icons/icon-card-options.svg" alt="" class="options-button">
+                    </div>
+                    <div class="card-info-box">
+                        <div class="info-row">
+                            <div class="card-info">
+                                <span class="info-title">Exibição:</span>
+                                <span class="info">De segunda a sexta</span>
+                            </div>
+                            <div class="card-info">
+                                <span class="info-title">Atualização:</span>
+                                <span class="info">06/10/2021</span>
+                            </div>
+                        </div>
+                        <div class="info-row">
+                            <span class="tv-status">TV Aberta</span>
+                            <div class="card-buttons">
+                                <button class="table-button"> <img src="/img/icons/icon-table-btn-see.svg" alt="" class="table-btn-icon"><span class="table-btn-text">Ver programa</span></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="program-card">
+                <div class="program-card-img-box">
+                    <img src="/img/program-altas-horas.png" alt="">
+                </div>
+                <div class="program-card-content-box">
+                    <div class="card-header">
+                        <span class="program-title">Altas Horas</span>
+                        <img src="/img/icons/icon-card-options.svg" alt="" class="options-button">
+                    </div>
+                    <div class="card-info-box">
+                        <div class="info-row">
+                            <div class="card-info">
+                                <span class="info-title">Exibição:</span>
+                                <span class="info">De segunda a sexta</span>
+                            </div>
+                            <div class="card-info">
+                                <span class="info-title">Atualização:</span>
+                                <span class="info">06/10/2021</span>
+                            </div>
+                        </div>
+                        <div class="info-row">
+                            <span class="tv-status">TV Aberta</span>
+                            <div class="card-buttons">
+                                <button class="table-button"> <img src="/img/icons/icon-table-btn-see.svg" alt="" class="table-btn-icon"><span class="table-btn-text">Ver programa</span></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="program-card">
+                <div class="program-card-img-box">
+                    <img src="/img/program-altas-horas.png" alt="">
+                </div>
+                <div class="program-card-content-box">
+                    <div class="card-header">
+                        <span class="program-title">Altas Horas</span>
+                        <img src="/img/icons/icon-card-options.svg" alt="" class="options-button">
+                    </div>
+                    <div class="card-info-box">
+                        <div class="info-row">
+                            <div class="card-info">
+                                <span class="info-title">Exibição:</span>
+                                <span class="info">De segunda a sexta</span>
+                            </div>
+                            <div class="card-info">
+                                <span class="info-title">Atualização:</span>
+                                <span class="info">06/10/2021</span>
+                            </div>
+                        </div>
+                        <div class="info-row">
+                            <span class="tv-status">TV Aberta</span>
+                            <div class="card-buttons">
+                                <button class="table-button"> <img src="/img/icons/icon-table-btn-see.svg" alt="" class="table-btn-icon"><span class="table-btn-text">Ver programa</span></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="program-card">
+                <div class="program-card-img-box">
+                    <img src="/img/program-altas-horas.png" alt="">
+                </div>
+                <div class="program-card-content-box">
+                    <div class="card-header">
+                        <span class="program-title">Altas Horas</span>
+                        <img src="/img/icons/icon-card-options.svg" alt="" class="options-button">
+                    </div>
+                    <div class="card-info-box">
+                        <div class="info-row">
+                            <div class="card-info">
+                                <span class="info-title">Exibição:</span>
+                                <span class="info">De segunda a sexta</span>
+                            </div>
+                            <div class="card-info">
+                                <span class="info-title">Atualização:</span>
+                                <span class="info">06/10/2021</span>
+                            </div>
+                        </div>
+                        <div class="info-row">
+                            <span class="tv-status">TV Aberta</span>
+                            <div class="card-buttons">
+                                <button class="table-button"> <img src="/img/icons/icon-table-btn-see.svg" alt="" class="table-btn-icon"><span class="table-btn-text">Ver programa</span></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="program-card">
+                <div class="program-card-img-box">
+                    <img src="/img/program-altas-horas.png" alt="">
+                </div>
+                <div class="program-card-content-box">
+                    <div class="card-header">
+                        <span class="program-title">Altas Horas</span>
+                        <img src="/img/icons/icon-card-options.svg" alt="" class="options-button">
+                    </div>
+                    <div class="card-info-box">
+                        <div class="info-row">
+                            <div class="card-info">
+                                <span class="info-title">Exibição:</span>
+                                <span class="info">De segunda a sexta</span>
+                            </div>
+                            <div class="card-info">
+                                <span class="info-title">Atualização:</span>
+                                <span class="info">06/10/2021</span>
+                            </div>
+                        </div>
+                        <div class="info-row">
+                            <span class="tv-status">TV Aberta</span>
+                            <div class="card-buttons">
+                                <button class="table-button"> <img src="/img/icons/icon-table-btn-see.svg" alt="" class="table-btn-icon"><span class="table-btn-text">Ver programa</span></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="program-card">
+                <div class="program-card-img-box">
+                    <img src="/img/program-altas-horas.png" alt="">
+                </div>
+                <div class="program-card-content-box">
+                    <div class="card-header">
+                        <span class="program-title">Altas Horas</span>
+                        <img src="/img/icons/icon-card-options.svg" alt="" class="options-button">
+                    </div>
+                    <div class="card-info-box">
+                        <div class="info-row">
+                            <div class="card-info">
+                                <span class="info-title">Exibição:</span>
+                                <span class="info">De segunda a sexta</span>
+                            </div>
+                            <div class="card-info">
+                                <span class="info-title">Atualização:</span>
+                                <span class="info">06/10/2021</span>
+                            </div>
+                        </div>
+                        <div class="info-row">
+                            <span class="tv-status">TV Aberta</span>
+                            <div class="card-buttons">
+                                <button class="table-button"> <img src="/img/icons/icon-table-btn-see.svg" alt="" class="table-btn-icon"><span class="table-btn-text">Ver programa</span></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="program-card">
+                <div class="program-card-img-box">
+                    <img src="/img/program-altas-horas.png" alt="">
+                </div>
+                <div class="program-card-content-box">
+                    <div class="card-header">
+                        <span class="program-title">Altas Horas</span>
+                        <img src="/img/icons/icon-card-options.svg" alt="" class="options-button">
+                    </div>
+                    <div class="card-info-box">
+                        <div class="info-row">
+                            <div class="card-info">
+                                <span class="info-title">Exibição:</span>
+                                <span class="info">De segunda a sexta</span>
+                            </div>
+                            <div class="card-info">
+                                <span class="info-title">Atualização:</span>
+                                <span class="info">06/10/2021</span>
+                            </div>
+                        </div>
+                        <div class="info-row">
+                            <span class="tv-status">TV Aberta</span>
+                            <div class="card-buttons">
+                                <button class="table-button"> <img src="/img/icons/icon-table-btn-see.svg" alt="" class="table-btn-icon"><span class="table-btn-text">Ver programa</span></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="program-card">
+                <div class="program-card-img-box">
+                    <img src="/img/program-altas-horas.png" alt="">
+                </div>
+                <div class="program-card-content-box">
+                    <div class="card-header">
+                        <span class="program-title">Altas Horas</span>
+                        <img src="/img/icons/icon-card-options.svg" alt="" class="options-button">
+                    </div>
+                    <div class="card-info-box">
+                        <div class="info-row">
+                            <div class="card-info">
+                                <span class="info-title">Exibição:</span>
+                                <span class="info">De segunda a sexta</span>
+                            </div>
+                            <div class="card-info">
+                                <span class="info-title">Atualização:</span>
+                                <span class="info">06/10/2021</span>
+                            </div>
+                        </div>
+                        <div class="info-row">
+                            <span class="tv-status">TV Aberta</span>
+                            <div class="card-buttons">
+                                <button class="table-button"> <img src="/img/icons/icon-table-btn-see.svg" alt="" class="table-btn-icon"><span class="table-btn-text">Ver programa</span></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="program-card">
+                <div class="program-card-img-box">
+                    <img src="/img/program-altas-horas.png" alt="">
+                </div>
+                <div class="program-card-content-box">
+                    <div class="card-header">
+                        <span class="program-title">Altas Horas</span>
+                        <img src="/img/icons/icon-card-options.svg" alt="" class="options-button">
+                    </div>
+                    <div class="card-info-box">
+                        <div class="info-row">
+                            <div class="card-info">
+                                <span class="info-title">Exibição:</span>
+                                <span class="info">De segunda a sexta</span>
+                            </div>
+                            <div class="card-info">
+                                <span class="info-title">Atualização:</span>
+                                <span class="info">06/10/2021</span>
+                            </div>
+                        </div>
+                        <div class="info-row">
+                            <span class="tv-status">TV Aberta</span>
+                            <div class="card-buttons">
+                                <button class="table-button"> <img src="/img/icons/icon-table-btn-see.svg" alt="" class="table-btn-icon"><span class="table-btn-text">Ver programa</span></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="program-card">
+                <div class="program-card-img-box">
+                    <img src="/img/program-altas-horas.png" alt="">
+                </div>
+                <div class="program-card-content-box">
+                    <div class="card-header">
+                        <span class="program-title">Altas Horas</span>
+                        <img src="/img/icons/icon-card-options.svg" alt="" class="options-button">
+                    </div>
+                    <div class="card-info-box">
+                        <div class="info-row">
+                            <div class="card-info">
+                                <span class="info-title">Exibição:</span>
+                                <span class="info">De segunda a sexta</span>
+                            </div>
+                            <div class="card-info">
+                                <span class="info-title">Atualização:</span>
+                                <span class="info">06/10/2021</span>
+                            </div>
+                        </div>
+                        <div class="info-row">
+                            <span class="tv-status">TV Aberta</span>
+                            <div class="card-buttons">
+                                <button class="table-button"> <img src="/img/icons/icon-table-btn-see.svg" alt="" class="table-btn-icon"><span class="table-btn-text">Ver programa</span></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="program-card">
+                <div class="program-card-img-box">
+                    <img src="/img/program-altas-horas.png" alt="">
+                </div>
+                <div class="program-card-content-box">
+                    <div class="card-header">
+                        <span class="program-title">Altas Horas</span>
+                        <img src="/img/icons/icon-card-options.svg" alt="" class="options-button">
+                    </div>
+                    <div class="card-info-box">
+                        <div class="info-row">
+                            <div class="card-info">
+                                <span class="info-title">Exibição:</span>
+                                <span class="info">De segunda a sexta</span>
+                            </div>
+                            <div class="card-info">
+                                <span class="info-title">Atualização:</span>
+                                <span class="info">06/10/2021</span>
+                            </div>
+                        </div>
+                        <div class="info-row">
+                            <span class="tv-status">TV Aberta</span>
+                            <div class="card-buttons">
+                                <button class="table-button"> <img src="/img/icons/icon-table-btn-see.svg" alt="" class="table-btn-icon"><span class="table-btn-text">Ver programa</span></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+        <!-- MENU LATERAL -->
+
+        <section class="gc-side-menu">
+            <ol class="menu-list">
+                <li class="list-item"> <img src="/img/icons/icon-side-menu-home.svg" alt="" class="side-menu-icon">Home</li>
+                <li class="list-item list-item--active"> <img src="/img/icons/icon-side-menu-programs.svg" alt="" class="side-menu-icon">Programas</li>
+                <li class="list-item"> <img src="/img/icons/icon-side-menu-users.svg" alt="" class="side-menu-icon">Usuários</li>
+            </ol>
+        </section>
+    
+        <!-- MODAL DE CRIAÇÃO DE PROGRAMA -->
+    
+        <div class="modal-background">
+            <div class="gc-new-program-modal">
+                <div class="modal-title-container">
+                    <div class="title-box">
+                        <img src="/img/icons/icon-title-programs.svg" alt="" class="title-icon">
+                        <h1 class="title">Novo programa</h1> 
+                    </div>
+                    <div class="icon-close-box">
+                        <img src="/img/icons/icon-modal-close.svg" alt="" class="close-icon">
+                    </div>
+                </div>
+                
+                <div class="gc-modal-tabs">
+                    <div class="tab-box tab-box--active">
+                        <span class="tab-title">Sobre</span>
+                    </div>
+                    <div class="tab-box">
+                        <span class="tab-title">Exibição</span>
+                    </div>
+                </div>
+                
+                <div class="about-modal-section">
+                    <div class="modal-img-input-container">
+                        <div class="upload-img-box">
+                            <img src="/img/icons/icon-modal-upload-img.svg" alt="" class="upload-icon">
+                            <span class="upload-title">Adicionar<br>uma imagem</span>
+                        </div>
+                        <div class="modal-inputs">
+                          <div class="input-box">
+                              <label for="text">Nome do Programa</label>
+                              <input type="text" id="search" name="program" placeholder="Ex: Domingão do HUCK">
+                          </div>
+                          <div class="input-box">
+                              <label for="text">Mnemônico</label>
+                              <input type="text" id="search" name="program" placeholder="Ex: DDH">
+                          </div>
+                          <div class="input-box">
+                              <label for="dropdown">Plataforma <img src="/img/icons/icon-modal-warning.svg" alt="" class="warning-icon"></label>
+                              <form> 
+                                  <select name="dropdown" id="" >
+                                      <option>Plataforma 01</option>
+                                      <option>Exemplo 01</option>
+                                      <option>Exemplo 01</option>
+                                      <option>Exemplo 01</option>
+                                  </select>
+                              </form>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="modal-inputs">
+                      <div class="input-box">
+                          <label for="text">Sobre</label>
+                          <form action="" class="about-program">
+                              <textarea name="gc-textarea" id="gc-textarea" class="gc-textarea"></textarea>
+                          </form>
+                      </div>
+                    </div>
+                </div>
+                <div class="exhibition-modal-section">
+                    <div class="modal-inputs">
+                        <div class="input-box">
+                            <label for="dropdown">Dias da semana</label>
+                            <form> 
+                                <select name="dropdown" id="" >
+                                    <option>Plataforma 01</option>
+                                    <option>Exemplo 01</option>
+                                    <option>Exemplo 01</option>
+                                    <option>Exemplo 01</option>
+                                </select>
+                            </form>
+                        </div>
+                        <div class="input-box">
+                            <label for="dropdown">Horário de início</label>
+                            <form> 
+                                <select name="dropdown" id="" >
+                                    <option>Plataforma 01</option>
+                                    <option>Exemplo 01</option>
+                                    <option>Exemplo 01</option>
+                                    <option>Exemplo 01</option>
+                                </select>
+                            </form>
+                        </div>
+                        <div class="input-box">
+                            <label for="dropdown">Horário de término</label>
+                            <form> 
+                                <select name="dropdown" id="" >
+                                    <option>Plataforma 01</option>
+                                    <option>Exemplo 01</option>
+                                    <option>Exemplo 01</option>
+                                    <option>Exemplo 01</option>
+                                </select>
+                            </form>
+                        </div>
+                    </div>
+    
+                    <div class="tv-status-options">
+                        <div class="status-box">
+                            <input type="radio" class="open-tv">
+                            <span class="tv-status-text">Tv Aberta</span>
+                        </div>
+                        <div class="status-box">
+                            <input type="radio" class="closed-tv">
+                            <span class="tv-status-text">Tv Fechada</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <div class="modal-warning">
+                        <img src="/img/icons/icon-modal-warning.svg" alt="" class="warning-icon">
+                        <span class="warning-text">Campos obrigatórios não preenchidos</span>
+                    </div>
+                    <div class="buttons-box">
+                        <button class="secondary-button">
+                            Cancelar
+                        </button>
+                      <button class="primary-button">
+                          <img src="/img/icons/icon-primary-btn-check.svg" alt="" class="primary-button-icon">
+                          Salvar
+                      </button>
+                    </div>
+              </div>
+            </div>
+        </div>
+        <script src="main.js"></script>
+</body>
+</html>

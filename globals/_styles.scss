@@ -1,0 +1,426 @@
+
+// FONTS
+
+@font-face {
+    font-family: "GlobotipoTextoBold";
+    src: url("fonts/GLOBO_TX_BD.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: "GlobotipoTextoRegular";
+    src: url("fonts/GLOBO_TX_RG.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+  }
+
+
+// COLORS
+
+$PrimaryPurple: #7241dc;
+$BorderGray: #d8d8d8;
+$PrimaryGray: #4f5257;
+$SecondaryGray: #888888;
+$TertiaryGray: #F6F6F6;
+
+$StatusGreen: #4acc9c;
+$StatusRed: #ff6961;
+$StatusBlue: #4a87cc;
+$StatusOrange: #ff923e;
+
+// CONFIGURAÇÕES GERAIS
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+
+    &::before,&::after {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+}
+
+body {
+    overflow-x: hidden;
+    background-color: #fcfcfc;
+}
+
+html {
+    font-family: 'GlobotipoTextoRegular', sans-serif;
+    color: $PrimaryGray;
+}
+
+a,
+a:visited {
+    color: inherit;
+}
+
+img, span {
+    display: block;
+}
+
+// WRAPPER PRINCIPAL
+
+.gc-content-wrapper {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    max-width: 1440px;
+    padding: 120px 32px;
+
+    @media screen and (max-width: 700px) {
+      padding: 120px 8px;
+    }
+}
+
+// CONTAINER DO TÍTULO DA PÁGINA
+  
+.title-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+
+    .title-box {
+      display: flex;
+      align-items: center;
+
+      .title-icon {
+        width: 28px;
+        margin-right: 8px;
+      }
+      .title {
+        font-family: "GlobotipoTextoBold";
+        font-size: 22px;
+        color: $PrimaryPurple;
+      }
+    }
+  }
+
+    // CONTAINER DA AREA DE FILTROS 
+
+    .filter-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-content: center;
+      margin: 24px 0;
+      gap: 16px;
+      width: 100%;
+  
+      @media screen and (max-width: 800px) {
+        justify-content: right;
+      }
+  
+      .inputs-container {
+          display: flex;
+          flex-wrap: wrap;
+          gap: 16px;
+  
+          .input-box {
+              display: flex;
+              flex-direction: column;
+  
+              @media screen and (max-width: 800px) {
+                width: 100%;
+              }
+  
+              label {
+                color: $PrimaryGray;
+                font-size: 14px;
+              }
+  
+              input {
+                border: none;
+                border-bottom: 1px $BorderGray solid;
+                outline: none;
+                min-width: 232px;
+                height: 32px;
+                font-size: 14px;
+                transition: .3s;
+                background-color: white;
+                background-image: url('/img/icons/icon-input-search.svg');
+                background-position: 10px 10px; 
+                background-repeat: no-repeat;
+                padding: 12px 20px 12px 34px;
+  
+                @media screen and (max-width: 800px) {
+                  width: 100%;
+                }
+  
+                &::placeholder { 
+                  color: $SecondaryGray;
+                }
+  
+                &:focus {
+                  border-bottom: 1px $PrimaryPurple solid;
+                }
+              }
+  
+              form {
+  
+                select {
+                  border: none;
+                  border-bottom: 1px $BorderGray solid;
+                  outline: none;
+                  min-width: 232px;
+                  height: 32px;
+                  font-size: 14px;
+                  transition: .3s;
+                  font-family: 'GlobotipoTextoRegular', sans-serif;
+  
+                  @media screen and (max-width: 800px) {
+                    width: 100%;
+                  }
+    
+                  &::placeholder { 
+                    color: $SecondaryGray;
+                    opacity: .6;
+                  }
+    
+                  &:focus {
+                    border-bottom: 1px $PrimaryPurple solid;
+                  }
+                }
+              }
+          }
+      }
+  }
+
+  //MODAIS
+
+  // CONTAINER DE TÍTULO DOS MODAIS
+
+  .modal-title-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+
+    .title-box {
+      display: flex;
+      align-items: center;
+
+      .title-icon {
+        width: 24px;
+        margin-right: 8px;
+      }
+      .title {
+        font-family: "GlobotipoTextoBold";
+        font-size: 18px;
+        color: $PrimaryPurple;
+      }
+    }
+    .icon-close-box {
+      padding: 8px;
+      border-radius: 50%;
+      transition: .3s;
+      cursor: pointer;
+
+      &:hover {
+        background-color: $TertiaryGray;
+      }
+
+      .close-icon {
+        width: 14px;
+        height: 14px;
+      }
+    }
+  }
+
+
+// INPUTS DOS MODAIS
+
+.modal-inputs {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 8px;
+
+  .input-box {
+    display: flex;
+    flex-direction: column;
+
+    label {
+      display: flex;
+      gap: 8px;
+      color: $PrimaryGray;
+      font-size: 14px;
+    }
+    input {
+      border: none;
+      border-bottom: 1px $BorderGray solid;
+      outline: none;
+      min-width: 232px;
+      height: 32px;
+      font-size: 14px;
+      transition: .3s;
+      background-color: white;
+
+      &::placeholder { 
+        color: $SecondaryGray;
+        font-size: 12px;
+      }
+
+      &:focus {
+        border-bottom: 1px $PrimaryPurple solid;
+      }
+    }
+
+    form {
+      select {
+        border: none;
+        border-bottom: 1px $BorderGray solid;
+        outline: none;
+        width: 100%;
+        height: 32px;
+        font-size: 14px;
+        transition: .3s;
+        font-family: 'GlobotipoTextoRegular', sans-serif;
+
+        &::placeholder { 
+          color: $SecondaryGray;
+          opacity: .6;
+        }
+
+        &:focus {
+          border-bottom: 1px $PrimaryPurple solid;
+        }
+      }
+
+      .gc-textarea {
+        margin-top: 4px;
+        border: 1px $BorderGray solid;
+        border-radius: 8px;
+        width: 100%;
+        height: 80px;
+        padding: 8px 16px;
+        outline: none;
+        transition: .3s;
+        resize: none;
+        font-family: 'GlobotipoTextoRegular', sans-serif;
+
+        @media screen and (max-width: 600px) {
+          height: 72px;
+        }
+
+        &:focus {
+          border: 1px $PrimaryPurple solid;
+        }
+      }
+    }
+  }
+}
+
+//FOOTER DOS MODAIS
+
+.modal-footer {
+  display: flex;
+  justify-content: right;
+  width: 100%;
+  gap: 16px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 24px 32px;
+
+  @media screen and (max-width: 600px) {
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .modal-warning {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    @media screen and (max-width: 600px) {
+      width: auto;
+    }
+
+    .warning-icon {
+      width: 12px;
+      height: 12px;
+    }
+    .warning-text {
+      font-size: 14px;
+      color: $StatusRed;
+      line-height: 1.2;
+
+      @media screen and (max-width: 600px) {
+        white-space: nowrap;
+      }
+    }
+  }
+  .buttons-box {
+    display: flex;
+    gap: 8px;
+  }
+}
+
+//BOTÕES
+
+//BOTÃO PRIMÁRIO
+
+  .primary-button {
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(114,65,220);
+    background: linear-gradient(153deg, rgba(114,65,220,1) 0%, rgba(83,53,175,1) 100%);
+    color: white;
+    font-family: "GlobotipoTextoRegular";
+    font-size: 16px;
+    border-radius: 8px;
+    border: none;
+    padding: 0px 32px;
+    cursor: pointer;
+    white-space: nowrap;
+    transition: .3s;
+
+    &--disabled {
+      opacity: .3;
+    }
+
+    .primary-button-icon {
+      width: 10px;
+      margin-right: 6px;
+    }
+
+    &:hover {
+      box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    }
+  }
+
+  //BOTÃO SECUNDÁRIO
+
+  .secondary-button {
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    color: $PrimaryPurple;
+    font-family: "GlobotipoTextoRegular";
+    font-size: 16px;
+    border-radius: 8px;
+    border: 1px $PrimaryPurple solid;
+    padding: 0px 32px;
+    cursor: pointer;
+    white-space: nowrap;
+    transition: .3s;
+
+    &:hover {
+      background: #f6f6f6;
+    }
+  }
+
+

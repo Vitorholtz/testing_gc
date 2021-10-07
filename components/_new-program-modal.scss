@@ -1,0 +1,158 @@
+// MODAL DE CRIAÇÃO DE PROGRAMA
+
+.modal-background {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: #16111ade;
+    z-index: 9999;
+    display: none;
+    transition: .3s;
+
+    &--active {
+        display: flex;
+    }
+  }
+  
+  .gc-new-program-modal {
+    display: flex;
+    flex-direction: column;
+    width: 648px;
+    height: 496px;
+    padding: 24px 32px;
+    background-color: white;
+    border-radius: 16px;
+    position: relative;
+  
+    @media screen and (max-width: 600px) {
+      width: 96%;
+      height: 624px;
+      border-radius: 8px;
+      padding: 16px;
+    }
+  
+    @media screen and (max-height: 620px) {
+      height: 580px;
+      width: 100%;
+    }
+  
+    .gc-modal-tabs {
+      width: 100%;
+      display: flex;
+      margin: 16px 0;
+      gap: 4px;
+  
+      .tab-box {
+        width: 104px;
+        display: flex;
+        justify-content: center;
+        cursor: pointer;
+        border-bottom: 2px $TertiaryGray solid;
+        transition: .3s;
+  
+        &:hover {
+          border-bottom: 2px $PrimaryPurple solid;
+        }
+  
+        &--active {
+          border-bottom: 2px $PrimaryPurple solid;
+        }
+        .tab-title {
+          color: $PrimaryGray;
+        }
+      }
+    }
+  
+    // ABA SOBRE
+  
+    .about-modal-section {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+  
+      .modal-img-input-container {
+        display: flex;
+        gap: 16px;
+  
+        @media screen and (max-width: 600px) {
+          flex-direction: column;
+        }
+    
+        .upload-img-box {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          text-align: center;
+          min-width: 176px;
+          height: 176px;
+          border: 2px $BorderGray dashed;
+          border-radius: 16px;
+          cursor: pointer;
+          transition: .3s;
+  
+          @media screen and (max-width: 600px) {
+            min-width: 120px;
+            height: 120px;
+            margin: auto;
+          }
+  
+          @media screen and (max-height: 620px) {
+            min-width: 80px;
+            height: 80px;
+          }
+    
+          &:hover {
+            border: 2px $PrimaryPurple dashed;
+          }
+    
+          .upload-icon {
+            width: 40px;
+            height: 40px;
+  
+            @media screen and (max-width: 600px) {
+              width: 24px;
+              height: 24px;
+            }
+          }
+          .upload-title {
+            margin-top: 8px;
+            font-size: 14px;
+            line-height: 1;
+  
+            @media screen and (max-width: 600px) {
+              font-size: 12px;
+            }
+          }
+        }
+      }
+    }
+  
+    // ABA DE EXIBIÇÃO
+  
+    .exhibition-modal-section {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      display: none;
+  
+      .tv-status-options {
+        margin-top: 8px;
+        display: flex;
+        justify-content: right;
+        gap: 16px;
+        width: 100%;
+  
+        .status-box {
+          display: flex;
+          gap: 8px;
+          align-items: center;
+        }
+      }
+    }
+  }
